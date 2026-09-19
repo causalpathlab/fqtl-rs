@@ -20,6 +20,6 @@ jobs:
       - name: fmt
         run: cargo fmt --all -- --check
       - name: clippy
-        run: cargo clippy -p fqtl-rs -- -D warnings
+        run: cargo clippy -- -D warnings
       - name: test
-        run: cargo test -p fqtl-rs
+        run: cargo test
